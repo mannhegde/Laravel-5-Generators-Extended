@@ -162,7 +162,7 @@ class MigrationMakeCommand extends Command
     {
         $name = str_replace($this->getAppNamespace(), '', $name);
 
-        return $this->laravel['path'] . '/' . str_replace('\\', '/', $name) . '.php';
+        return $this->laravel['path'] . '/Models/' . str_replace('\\', '/', $name) . '.php';
     }
 
     /**
